@@ -40,10 +40,10 @@ var valueB = "4";
 var resultSubtraction = valueA - valueB;
 var resultMultiplication = valueA * valueB;
 
-console.log(resultSubtraction); // Expected output: 6
-console.log(resultMultiplication); // Expected output: 40
-console.log(typeof resultSubtraction);  // "number"
-console.log(typeof resultMultiplication); // "number"
+console.log(resultSubtraction); // Expected output: 6  since it converted the string to int 
+console.log(resultMultiplication); // Expected output: 40  since it converted the string to int 
+console.log(typeof resultSubtraction);  // "number" this just confirms that the type from the result is a number or int
+console.log(typeof resultMultiplication); // "number" this just confirms that the type from the result is a number or int
 
 /*
 Explanation:
@@ -53,8 +53,9 @@ when performing arithmetic operations, allowing for correct calculations
 
 // Exercise 6
 
-var unassignedVar;
-var explicitNull = null;
+var unassignedVar;  // JavaScript sets a not intialized variable as "undefined"
+var explicitNull = null;  // JavaScript sets null as a object the reason is for the history of JavaScript for backwards compatibility 
+                          // even though null is primitive 
 
 console.log(typeof unassignedVar); // Expected output: "undefined"
 console.log(typeof explicitNull); // Expected output: "object"
